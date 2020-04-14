@@ -28,3 +28,33 @@ Note: a given score may include allergens **not** listed above (i.e.
 allergens that score 256, 512, 1024, etc.).  Your program should
 ignore those components of the score.  For example, if the allergy
 score is 257, your program should only report the eggs (1) allergy.
+
+## Running the tests
+
+To compile and run the tests, just run the following in your exercise directory:
+```bash
+$ nim c -r allergies_test.nim
+```
+
+## Submitting Exercises
+
+Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/nim/allergies` directory.
+
+You can find your Exercism workspace by running `exercism debug` and looking for the line that starts with `Exercises Directory`.
+
+## Need help?
+
+These guides should help you,
+* [Installing Nim](https://exercism.io/tracks/nim/installation)
+* [Running the Tests](https://exercism.io/tracks/nim/tests)
+* [Learning Nim](https://exercism.io/tracks/nim/learning)
+* [Useful Nim Resources](https://exercism.io/tracks/nim/resources)
+
+
+## Source
+
+Jumpstart Lab Warm-up [http://jumpstartlab.com](http://jumpstartlab.com)
+
+## Submitting Incomplete Solutions
+
+It's possible to submit an incomplete solution so you can see how others have completed the exercise.
