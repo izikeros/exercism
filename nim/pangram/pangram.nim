@@ -1,7 +1,19 @@
+# Lessons learned:
+# - array from string (let letters = @"abcd")
+# - using .filterIt for sequence filtering
+# - checking if key exists in hash table
+# - removing key from the hash table
+# - import multiple functions from module
+#
+# best solution found:
+# https://exercism.io/tracks/nim/exercises/pangram/solutions/5cab5feda7fe4910b81cdd6fd1650f3e
+# import sequtils, strutils
+# proc isPangram*(input: string): bool =
+#    return {'a'..'z'}.allIt(it in input.toLower())
+
 import sequtils
 import tables
-from strutils import join
-from strutils import toLowerAscii
+from strutils import join, toLowerAscii
 
 proc isPangram*(text: string): bool =
     # TODO: consider using set
